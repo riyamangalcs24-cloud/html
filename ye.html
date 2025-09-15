@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<body>
+    <style>
+        .box{
+            height : 100px;
+            width:100px;
+            background-color: aqua;
+            position: relative;
+            border:1px solid black;
+            animation-name: rightMovement;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-direction:alternate;
+            animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 2s;
+        }
+        @keyframes rightMovement{
+            from {
+                top:0px;
+                left:0px;
+            }
+            50%{
+                top:450px;
+                left:450px;
+            }
+            to{
+                top:0px;
+                left:600px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box">this is my first box </div>
+    </body>
+</html>
