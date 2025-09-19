@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plane Going Upward Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#87ceeb, #ffffff);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .plane {
+      position: relative;
+      width: 120px;
+      animation: fly 6s linear infinite;
+    }
+    @keyframes fly {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      70% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) scale(0.8);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="rocket.jpg"
+       alt="Plane" class="plane">
+</body>
+</html>
